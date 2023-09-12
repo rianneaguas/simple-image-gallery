@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rianne Aguas | Using Lightbox – Extra Credit</title>
+
+	<link href="lightbox/css/lightbox.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+
+	<style>
+	body
+	{
+		margin: 0px;
+		margin-bottom: 200px;
+		background-color: lightyellow;
+		background-image: url('../lab06/images/background.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-family: 'Single Day', cursive;;
+	}
+
+	.container
+	{
+		margin: 0px auto;
+		width: 910px;
+		color: black;
+		padding: 10px;
+	}
+
+	.header
+	{
+		text-align: center;
+		color: black;
+		text-shadow: 2px 2px 2px white ;
+		font-size: 22px;
+	}
+
+	.gallery
+	{
+		background-color: #D7EACE;
+		padding: 10px;
+		margin: auto;
+		width: 910px;
+		border: 5px dashed saddlebrown; 
+		border-radius: 25px;
+	}
+
+	.food-container
+	{
+		margin: auto;
+		text-align: center;
+		height: 380px;
+		width: 890px;
+	}
+
+	.food-container img
+	{
+		height: 300px;
+		width: 200px;
+		padding: 10px;
+	}
+
+	.food
+	{
+		width: 220px;
+		float: left;
+	}
+
+	.food p 
+	{
+		visibility: hidden;
+		font-size: 19px;
+	}
+
+	.food:hover p 
+	{
+		visibility: visible;
+	}
+
+	.middlerow
+	{
+		margin: 0px auto;
+		margin-left: 50px;
+		text-align: center;
+		height: 330px;
+		width: 890px;
+	}
+
+	.middlerow img
+	{
+		height: 250px;
+		width: 250px;
+		padding: 10px;
+	}
+
+	.middlefood
+	{
+		width: 270px;
+		float: left;
+	}
+
+	.middlefood p 
+	{
+		visibility: hidden;
+		font-size: 19px;
+	}
+
+	.middlefood:hover p 
+	{
+		visibility: visible;
+	}
+
+	.clearfloat{
+		clear: both;
+	}
+
+	h1 a{
+		color: saddlebrown;
+		text-decoration: none;
+	}
+
+	h1 a:hover{
+		color: pink;
+		text-decoration: underline;
+		font-size: 45px;
+	}
+
+	</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+	<h1><a href="https://www.instagram.com/rianneatewhat/?hl=en" target="_blank">@rianneatewhat</a> simple image gallery</h1>
+	<h2>some of my self-cooked, best features :)</h2>
+</div>
+
+<div class="gallery">
+<div class="food-container">
+	<div class="food">
+	<a href="../lab06/images/nattobowl.jpg" data-lightbox="yummy" data-title="Natto Bowl">
+	<img src="../lab06/images/nattobowl.jpg" alt="natto"></a>
+	<p>Natto + Pesto Salmon Bowl</p>
+	<div class="clearfloat"></div>
+	</div>
+
+	<div class="food">
+	<a href="../lab06/images/hashbrown.jpg" data-lightbox="yummy" data-title="Omelette + Hashbrown">
+	<img src="../lab06/images/hashbrown.jpg" alt="hashbrown"></a>
+	<p>Omelette + Hashbrown</p>
+	<div class="clearfloat"></div>
+	</div>
+
+	<div class="food">
+	<a href="../lab06/images/charcuterie.jpg" data-lightbox="yummy" data-title="Charcuterie Board">
+	<img src="../lab06/images/charcuterie.jpg" alt="charcuterie"></a>
+	<p>Charcuterie Board</p>
+	<div class="clearfloat"></div>
+	</div>
+
+	<div class="food">
+	<a href="../lab06/images/spicynoodles.jpg" data-lightbox="yummy" data-title="Spicy Noodles">
+	<img src="../lab06/images/spicynoodles.jpg" alt="spicy noodles"></a>
+	<p>Spicy Noodles</p>
+	<div class="clearfloat"></div>
+	</div>
+</div> <!-- food container -->
+<div class="clearfloat"></div>
+
+<div class="middlerow">
+	<div class="middlefood">
+	<a href="../lab06/images/springroll.jpg" data-lightbox="yummy" data-title="Spring Roll + Salad">
+	<img src="../lab06/images/springroll.jpg" alt="springroll"></a>
+	<p>Spring Roll + Salad</p>
+	<div class="clearfloat"></div>
+	</div>
+
+	<div class="middlefood">
+	<a href="../lab06/images/tamagoyaki.jpg" data-lightbox="yummy" data-title="Tamagoyaki + Sausage Bowl">
+	<img src="../lab06/images/tamagoyaki.jpg" alt="tamagoyaki"></a>
+	<p>Tamagoyaki + Sausage Bowl</p>
+	<div class="clearfloat"></div>
+	</div>
+
+	<div class="middlefood">
+	<a href="../lab06/images/smoothie.jpg" data-lightbox="yummy" data-title="Spinach Smoothie Bowl">
+	<img src="../lab06/images/smoothie.jpg" alt="smoothie"></a>
+	<p>Kale + Spinach Smoothie Bowl</p>
+	<div class="clearfloat"></div>
+	</div>
+</div> <!-- middlerow -->
+<div class="clearfloat"></div>
+
+<div class="food-container">
+	<div class="food">
+	<a href="../lab06/images/salad.jpg" data-lightbox="yummy" data-title="Caesar Salad">
+	<img src="../lab06/images/salad.jpg" alt="salad"></a>
+	<p>Caesar Salad</p>
+	<div class="clearfloat"></div>
+	</div>
+
+	<div class="food">
+	<a href="../lab06/images/bibimbap.jpg" data-lightbox="yummy" data-title="Bibimbap Bowl">
+	<img src="../lab06/images/bibimbap.jpg" alt="bibimbap"></a>
+	<p>Bibimbap Bowl</p>
+	<div class="clearfloat"></div>
+	</div>
+
+	<div class="food">
+	<a href="../lab06/images/nourishbowl.jpg" data-lightbox="yummy" data-title="Nourish Bowl">
+	<img src="../lab06/images/nourishbowl.jpg" alt="nourishbowl"></a>
+	<p>Nourish Bowl</p>
+	<div class="clearfloat"></div>
+	</div>
+
+	<div class="food">
+	<a href="../lab06/images/bakedmussels.jpg" data-lightbox="yummy" data-title="Baked Mussel + Yam Bowl">
+	<img src="../lab06/images/bakedmussels.jpg" alt="bakedmussels"></a>
+	<p>Baked Mussel + Yam Bowl</p>
+	</div>
+	<div class="clearfloat"></div>
+</div>
+<div class="clearfloat"></div>
+
+
+</div> <!-- gallery -->
+
+</div> <!-- container -->
+<script src="lightbox/js/lightbox-plus-jquery.js"></script>
+</body>
+</html>
